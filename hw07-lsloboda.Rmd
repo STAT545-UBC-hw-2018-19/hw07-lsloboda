@@ -1,0 +1,32 @@
+---
+title: "hw-07 building your own R package"
+output:
+   github_document:
+      toc: true
+always_allow_html: yes
+---
+## Question 1 - Character Data
+Exercises from **Strings** chapter in **R for Data Science**.
+
+## Initialize
+
+* Load the required libraries:
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(stringr))
+suppressPackageStartupMessages(library(stringi))
+```
+
+
+### 14.2.5 String basics
+**1. In code that doesn’t use stringr, you’ll often see paste() and paste0(). What’s the difference between the two functions? What stringr function are they equivalent to? How do the functions differ in their handling of NA?**
+
+
+
+## Resources
+
+https://stats.stackexchange.com/questions/13702/what-is-the-difference-between-lm-and-rlm
+
+https://stackoverflow.com/questions/23957278/how-to-add-table-of-contents-in-rmarkdown/23963277 
+
