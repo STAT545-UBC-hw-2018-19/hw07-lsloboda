@@ -23,17 +23,17 @@ Different methods of estimation and transformation are useful in different scena
 
 For simplification, I will focus only on the **transformation** step for two cases: lambda = 0 and does not = 0. I will apply user-defined values for the positive shift value and the estimate of lambda.
 
-Further, these general steps that I used to create a package in R:
+Further, these are general steps that I used to create a package in R:
 
 * Seed the repo with the original *powers* package, using a ZIP file
 * Create a new R script for the new function
-* Define the inputs: the dataset to be transformed, the estimate of lambda, the value to shift x by, and a logical denoting whether to plot the old results vs. new results
-* Define the outputs: the transformed dataset, and optionally a plot of old results vs. new results
-* Write the function, including 3 conditions: (i) Apply the x-shift, if the user provided it; (ii) Apply the transformation appropriate for lambda = 0 or (iii) Apply the transformation appropriate for lamba != 0.
-* Write 3 unit tests to check different scenarios
+* Define the inputs
+* Define the outputs
+* Write the function
 * Update the documentation using the appropriate tags
-* Run devtools::document() regularly, along with Restart + Install
-* Check the function to ensure no errors occur
+* Regularly run devtools::document(), along with Restart + Install, to incorporate changes
+* Write unit tests to check different scenarios
+* Regularly check the function to ensure no errors occur; troubleshoot when needed
 * Update the README and vignette
 
 If abs(lambda) > 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
@@ -81,10 +81,11 @@ boxcox <- function(x, lambda, delta, plot_it) {
 #' @export
 ```
 
-## Output
+## Example
 
 ## Documentation
 
 ## Resources
+https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
 
 
