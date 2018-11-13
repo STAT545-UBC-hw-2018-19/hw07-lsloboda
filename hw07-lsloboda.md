@@ -1,19 +1,24 @@
----
-title: "hw07-lsloboda"
-output:
-   github_document:
-      toc: true
+hw07-lsloboda
+================
 
-always_allow_html: yes
----
+-   [Building your own R package](#building-your-own-r-package)
+    -   [Problem](#problem)
+    -   [Background](#background)
+    -   [Function Code](#function-code)
+    -   [Output](#output)
+    -   [Documentation](#documentation)
+    -   [Resources](#resources)
 
-# Building your own R package
+Building your own R package
+===========================
 
-## Problem
+Problem
+-------
 
 The objective of the assignment is to build, test and document a new R package. I decided to add a Box-Cox transformation to the *powers* package that was worked on in class.
 
-## Background
+Background
+----------
 
 The Box-Cox transformation is used to make a non-normal distribution into a normal distribution, allowing normal-dependent tests (e.g. t-tests) to be conducted on the data. The power transformation factor, or lambda, is estimated using a variety of techniques, such as maximum likelihood estimate (MLE) or a root-finding method such as Newton-Raphson. The power transformation factor is then applied to the data to, ideally, achieve normalized data. *Note: The Box-Cox transformation can only be used on positive data, so negative values must be shifted to be positive before applying the method.*
 
@@ -25,23 +30,23 @@ For simplification, I will focus only on the **transformation** step for two cas
 
 Further, these general steps that I used to create a package in R:
 
-* Seed the repo with the original *powers* package, using a ZIP file
-* Create a new R script for the new function
-* Define the inputs: the dataset to be transformed, the estimate of lambda, the value to shift x by, and a logical denoting whether to plot the old results vs. new results
-* Define the outputs: the transformed dataset, and optionally a plot of old results vs. new results
-* Write the function, including 3 conditions: (i) Apply the x-shift, if the user provided it; (ii) Apply the transformation appropriate for lambda = 0 or (iii) Apply the transformation appropriate for lamba != 0.
-* Write 3 unit tests to check different scenarios
-* Update the documentation using the appropriate tags
-* Run devtools::document() regularly, along with Restart + Install
-* Check the function to ensure no errors occur
-* Update the README and vignette
+-   Seed the repo with the original *powers* package, using a ZIP file
+-   Create a new R script for the new function
+-   Define the inputs: the dataset to be transformed, the estimate of lambda, the value to shift x by, and a logical denoting whether to plot the old results vs. new results
+-   Define the outputs: the transformed dataset, and optionally a plot of old results vs. new results
+-   Write the function, including 3 conditions: (i) Apply the x-shift, if the user provided it; (ii) Apply the transformation appropriate for lambda = 0 or (iii) Apply the transformation appropriate for lamba != 0.
+-   Write 3 unit tests to check different scenarios
+-   Update the documentation using the appropriate tags
+-   Run devtools::document() regularly, along with Restart + Install
+-   Check the function to ensure no errors occur
+-   Update the README and vignette
 
-If abs(lambda) > 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
+If abs(lambda) &gt; 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
 
+Function Code
+-------------
 
-## Function Code
-
-```{r}
+``` r
 #' Simplified Box-Cox Transformation
 #'
 #' This function applies an estimate of the power transformation factor (lambda) in a deterministic power function to turn non-normal data into normal data.
@@ -81,10 +86,11 @@ boxcox <- function(x, lambda, delta, plot_it) {
 #' @export
 ```
 
-## Output
+Output
+------
 
-## Documentation
+Documentation
+-------------
 
-## Resources
-
-
+Resources
+---------
