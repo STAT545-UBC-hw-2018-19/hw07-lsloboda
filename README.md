@@ -8,5 +8,11 @@
 
 |    **Item**                                     | **Status** |
   |-------------------------------------------------|------------|
-  | *Add a function to the R powers package*      |
-  | *Add/update the appropriate documentation*    | :thumbsup: |
+  | *Add a function to the R powers package:*                   |
+  | *Define & export min. 1 new function*    | :thumbsup: |
+  | *Give arguments sensible defaults*    | :thumbsup: |
+  | *Update the documentation*    | :thumbsup: |
+  | *Perform min. 3 unit tests for common cases*    | :thumbsup: |
+  | *Pass 'check' without errors*    | :thumbsup: |
+  | *Update the README and vignette*    | :thumbsup: |
+  | *Modify the instructions to tell someone how to install the package*    | :thumbsup: |
