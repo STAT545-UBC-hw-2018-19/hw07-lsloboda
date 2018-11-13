@@ -8,6 +8,5 @@
 
 |    **Item**                                     | **Status** |
   |-------------------------------------------------|------------|
-  | *Complete 2/6 of the provided tasks:*  |
-  | *#1 - Stringr exercises*           | :thumbsup: |
-  | *#2 - Writing a function*     | :thumbsup: |
+  | *Add a function to the R powers package*      |
+  | *Add/update the appropriate documentation*    | :thumbsup: |
