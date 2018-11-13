@@ -6,6 +6,7 @@ hw07-lsloboda
     -   [Background](#background)
     -   [Function Code](#function-code)
     -   [Example](#example)
+    -   [Discussion](#discussion)
     -   [Documentation](#documentation)
     -   [Resources](#resources)
 
@@ -40,8 +41,6 @@ Further, these are general steps that I used to create a package in R:
 -   Write unit tests to check different scenarios
 -   Regularly check the function to ensure no errors occur; troubleshoot when needed
 -   Update the README and vignette
-
-If abs(lambda) &gt; 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
 
 Function Code
 -------------
@@ -88,6 +87,11 @@ boxcox <- function(x, lambda, delta, plot_it) {
 
 Example
 -------
+
+Discussion
+----------
+
+If abs(lambda) &gt; 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
 
 Documentation
 -------------
