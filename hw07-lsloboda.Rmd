@@ -93,8 +93,7 @@ boxcox <- function(x, lambda, delta, plot_it) {
 
 We see that checking the function produces no errors:
 
-
-[Error Check](C:\Users\laura\Desktop\STAT 545 Exploratory Data Analysis\hw07-lsloboda\powers\no_errors_check.png)
+![here](https://github.com/STAT545-UBC-students/hw07-lsloboda/blob/master/no_errors_check.PNG)
 
 ## Unit Tests
 
@@ -128,7 +127,8 @@ If my package was able to estimate ${\lambda}$, we could also have compared my e
 We see that checking the test package (in the More dropdown menu) produces no errors with a similar message as previously shown for checking the package:
 
 
-![Error Check](C:\Users\laura\Desktop\STAT 545 Exploratory Data Analysis\hw07-lsloboda\powers\no_errors_check_package.png)
+![here](https://github.com/STAT545-UBC-students/hw07-lsloboda/blob/master/no_errors_check_package.PNG)
+
 
 ## Examples
 
@@ -170,7 +170,7 @@ Since my function doesn't actually estimate the power transformation factor, we 
 When creating a new function, it's important to provide documentation so that other users (or possibly your future self) can understand, implement and update the function. In this case, documentation for the function was updated in the README file (including installation instructions) and the vignette. The roxygen2 parameters were also used to add a help section regarding the function when ?boxcox is entered in the console, which looks like this:
 
 
-![Help comments](C:\Users\laura\Desktop\STAT 545 Exploratory Data Analysis\hw07-lsloboda\powers\boxcox_help.png)
+![here](https://github.com/STAT545-UBC-students/hw07-lsloboda/blob/master/boxcox_help.PNG)
 
 
 ## Resources
