@@ -94,7 +94,7 @@ boxcox <- function(x, lambda, delta, plot_it) {
 We see that checking the function produces no errors:
 
 
-![Error Check](C:\Users\laura\Desktop\STAT 545 Exploratory Data Analysis\hw07-lsloboda\powers\no_errors_check.png)
+[Error Check](C:\Users\laura\Desktop\STAT 545 Exploratory Data Analysis\hw07-lsloboda\powers\no_errors_check.png)
 
 ## Unit Tests
 
