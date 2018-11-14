@@ -190,9 +190,16 @@ Since my function doesn't actually estimate the power transformation factor, we 
 Documentation
 -------------
 
-When creating a new function, it's important to provide documentation so that other users (or possibly your future self) can understand, implement and update the function. In this case, documentation for the function was updated in the README file (including installation instructions) and the vignette. The roxygen2 parameters were also used to add a help section regarding the function when ?boxcox is entered in the console, which looks like this:
+When creating a new function, it's important to provide documentation so that other users (or possibly your future self!) can understand, implement and update the function. In this case, documentation for the function was updated in the README file and the vignette. The roxygen2 parameters were also used to add a help section regarding the function when ?boxcox is entered in the console, which looks like this:
 
 ![here](https://github.com/STAT545-UBC-students/hw07-lsloboda/blob/master/boxcox_help.PNG)
+
+Lastly, the README is updated to include installation instructions, as shown below:
+
+``` r
+# install.packages("devtools")
+#devtools::install_github("STAT545-UBC-students/hw07-lsloboda/powers-master")
+```
 
 Resources
 ---------
