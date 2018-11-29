@@ -198,7 +198,7 @@ Lastly, the README is updated to include installation instructions, as shown bel
 
 ``` r
 # install.packages("devtools")
-#devtools::install_github("STAT545-UBC-students/hw07-lsloboda/powers-master")
+#devtools::install_github("lsloboda/powers")
 ```
 
 Resources

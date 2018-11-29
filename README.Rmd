@@ -4,6 +4,25 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# hw07-lsloboda
+
+## Overview
+**This repo contains the files relevant to STAT 545 Homework 07.**
+  The homework file is located [here](https://github.com/STAT545-UBC-students/hw07-lsloboda/blob/master/hw07-lsloboda.md).
+
+## Purpose
+
+|    **Item**                                     | **Status** |
+  |-------------------------------------------------|------------|
+  | *Add a function to the R powers package:*                   |
+  | *Define & export min. 1 new function*    | :thumbsup: |
+  | *Give arguments sensible defaults*    | :thumbsup: |
+  | *Update the documentation*    | :thumbsup: |
+  | *Perform min. 3 unit tests for common cases*    | :thumbsup: |
+  | *Pass 'check' without errors*    | :thumbsup: |
+  | *Update the README and vignette*    | :thumbsup: |
+  | *Modify the instructions to tell someone how to install the package*    | :thumbsup: |
+
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -26,7 +45,7 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("STAT545-UBC-students/hw07-lsloboda/powers")
+#devtools::install_github("lsloboda/powers")
 ```
 
 ## Example
@@ -34,7 +53,7 @@ devtools::install_github("STAT545-UBC-students/hw07-lsloboda/powers")
 See the vignette for more extensive use, but here's an example of the boxcox function:
 
 ```{r example}
-powers::boxcox(1:10, 2)
+#powers::boxcox(1:10, 2)
 ```
 
 ## For Developers
